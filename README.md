@@ -1,24 +1,82 @@
-# README
+## User テーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|  Column            |  Type               |  Options          |
+| ------------------ | ------------------- | ----------------- |
+| name               | string              | null: false       |
+| email              | string              | null: false       |
+| password           | string              | null: false       |
 
-Things you may want to cover:
+### Association
+- has_many :dogs
 
-* Ruby version
+## Dog テーブル
 
-* System dependencies
+|  Column            |  Type               |  Options          |
+| ------------------ | ------------------- | ----------------- |
+| dog_name           | string              | null: false       |
 
-* Configuration
+### Association
+- belongs_to :user
+- belongs_to :profile
+- belongs_to :care
+- belongs_to :diary
+- belongs_to :grow
+- belongs_to :health_care
 
-* Database creation
+## Profile テーブル
+|  Column            |  Type               |  Options          |
+| ------------------ | ------------------- | ----------------- |
+| type               | string              | null: false       |
+| sex                | string              | null: false       |
+| color              | string              | null: false       |
+| birthday           | date                | null: false       | 
+| character          | text                |                   |
+| memo               | text                |                   |
 
-* Database initialization
+### Association
+- belongs_to :dog
 
-* How to run the test suite
+## Care テーブル
+|  Column            |  Type               |  Options          |
+| ------------------ | ------------------- | ----------------- |
+| walk_time          | string              |                   |
+| trimming           | string              |                   |
+| type_of_foods      | string              |                   |
+| amount_of_food     | string              |                   |
+| number_of_meals    | string              |                   |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
+- belongs_to :dog
 
-* Deployment instructions
+## Diary テーブル
 
-* ...
+|  Column            |  Type               |  Options                        |
+| ------------------ | ------------------- | ------------------------------- |
+| date               | date                | null: false                     |
+| text               | text                | null: false                     |
+| image              | references          | null: false, foreign_key: true  |
+
+### Association
+- belongs_to :dog
+
+## Grow テーブル
+
+|  Column            |  Type               |  Options           |
+| ------------------ | ------------------- | ------------------ |
+| height             | string              | null: false        |
+| weight             | string              | null: false        |
+
+### Association
+- belongs_to :dog
+
+## HealthCare テーブル
+
+|  Column            |  Type               |  Options           |
+| ------------------ | ------------------- | ------------------ |
+| hospital           | string              | null: false        |
+| medical_history    | text                | null: false        |
+| medicine           | text                | null: false        |
+| allergies          | text                | null: false        |
+
+### Association
+- belongs_to :dog
