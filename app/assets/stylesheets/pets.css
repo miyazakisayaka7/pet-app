@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  background-color: #f7f7ee;
 }
 
 .side-bar {
@@ -29,12 +30,21 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-
+.rooms {
+  background-color: #cfe6d2;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+.room {
+  padding: 20px 0 40px;
+}
 .pet-names {
   background-color: #cfe6d2;
   height: calc(100vh);
   padding: 0 20px;
   overflow: scroll;
+  color: white;
 }
 
 .pet-name {

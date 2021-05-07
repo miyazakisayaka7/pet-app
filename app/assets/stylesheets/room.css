@@ -23,7 +23,7 @@ li {
   font-size: 13px;
 }
 
-.dog-room-form {
+.room-form {
   width: 980px;
   margin: 60px auto;
   padding: 40px;
@@ -33,21 +33,21 @@ li {
   box-sizing: border-box;
   color: white;
 }
-.dog-room-form__errors {
+.room-form__errors {
   margin: 30px 0;
   padding: 20px 40px;
   border: 1px solid #ddd;
   border-radius: 2px;
   text-align: center;
 }
-.dog-room-form__label {
+.room-form__label {
   display: block;
   line-height: 50px;
   font-size: 17px;
   text-align: right;
   color: #d491a5;
 }
-.dog-room-form__input {
+.room-form__input {
   float: left;
   width: 80%;
   line-height: 30px;
@@ -55,22 +55,22 @@ li {
   box-sizing: border-box;
   border: solid 3px #f7f7ee;
 }
-.dog-room-form__action-btn {
+.room-form__action-btn {
   display: inline-block;
   padding: 12px 20px;
   color: #fff;
   background-color: #d491a5;
   border: 0;
 }
-.dog-room-form__field {
+.room-form__field {
   margin-top: 30px;
 }
-.dog-room-form__field:after {
+.room-form__field:after {
   content: "";
   clear: both;
   display: block;
 }
-.dog-room-form__field--left {
+.room-form__field--left {
   float: left;
   width: 30%;
   padding-right: 20px;
@@ -78,12 +78,12 @@ li {
   box-sizing: border-box;
   
 }
-.dog-room-form__field--right {
+.room-form__field--right {
   float: right;
   width: 70%;
 }
 
-.dog-room-user {
+.room-user {
   padding: 0 15px;
   line-height: 50px;
   font-size: 14px;
@@ -91,26 +91,26 @@ li {
   width: 500px;
   margin: 0 auto;
 }
-.dog-room-user:after {
+.room-user:after {
   content: "";
   clear: both;
   display: block;
 }
-.chat-room-user__name {
+.room-user__name {
   float: left;
 }
-.dog-room-user__btn {
+.room-user__btn {
   display: inline-block;
   cursor: pointer;
 }
-.dog-room-user__btn--add {
+.room-user__btn--add {
   color: #38aef0;
 }
-.dog-room-user__btn--remove {
+.room-user__btn--remove {
   color: #f05050;
 }
 
-.dog-room-user__name a {
+.room-user__name a {
   text-decoration: none;
   color: #38aef0;
 }

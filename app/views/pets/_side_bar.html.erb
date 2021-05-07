@@ -3,14 +3,16 @@
     <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="add-pet">
-    <%= link_to "Petを追加する", root_path %>
+    <%= link_to "Petを追加する", new_room_path %>
   </div>
 </div>
 
-<div class="pet-names">
-  <div class="pet-name">
-    <div class="pet-name-room">
-      <a href="#">Ruru</a>
+<div class="rooms">
+  <% current_user.rooms.each do |room| %>
+    <div class="room">
+      <div class="room-name">
+        <%= link_to room.name, pets_path %>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>

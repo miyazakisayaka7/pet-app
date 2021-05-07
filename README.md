@@ -7,13 +7,27 @@
 | password           | string              | null: false       |
 
 ### Association
-- has_many :dogs
+- has_many :rooms
 
-## Dog テーブル
+## Room テーブル
 
-|  Column            |  Type               |  Options          |
-| ------------------ | ------------------- | ----------------- |
-| name               | string              | null: false       |
+|  Column            |  Type            |  Options            |
+| ------------------ | ---------------- | ------------------- |
+| name               | string           | null: false         |
+
+## Association
+- belongs_to :pet
+
+## Pet
+
+|  Column            |  Type            |  Options            |
+| ------------------ | ---------------- | ------------------- |
+| user               | references       | foreign_key: true   |
+| profile            | references       | foreign_key: true   |
+| care               | references       | foreign_key: true   |
+| diary              | references       | foreign_key: true   |
+| grow               | references       | foreign_key: true   |
+| health_care        | references       | foreign_key: true   |
 
 ### Association
 - belongs_to :user
@@ -34,7 +48,7 @@
 | memo               | text                |                   |
 
 ### Association
-- belongs_to :dog
+- belongs_to :room
 
 ## Care テーブル
 |  Column            |  Type               |  Options          |
@@ -46,7 +60,7 @@
 | number_of_meals    | string              |                   |
 
 ### Association
-- belongs_to :dog
+- belongs_to :room
 
 ## Diary テーブル
 
@@ -57,7 +71,7 @@
 | image              | references          | null: false, foreign_key: true  |
 
 ### Association
-- belongs_to :dog
+- belongs_to :room
 
 ## Grow テーブル
 
@@ -67,7 +81,7 @@
 | weight             | string              | null: false        |
 
 ### Association
-- belongs_to :dog
+- belongs_to :room
 
 ## HealthCare テーブル
 
@@ -79,4 +93,4 @@
 | allergies          | text                | null: false        |
 
 ### Association
-- belongs_to :dog
+- belongs_to :room
