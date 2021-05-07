@@ -36,11 +36,13 @@
   font-size: 14px;
   font-weight: 200;
 }
+
 .account-page .account-page__header .btn {
   margin-top: 20px;
   background-color: #f7f7ee;
   font-size: 14px;
 }
+
 .account-page .field {
   margin-bottom: 10px;
   color: #f7f7ee;
@@ -61,7 +63,7 @@
   padding: 10px;
   letter-spacing: 1px;
   background-color: white;
- border: solid 3px #f7f7ee;
+  border: solid 3px #f7f7ee;
 }
 .account-page .btn {
   display: inline-block;

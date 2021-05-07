@@ -13,7 +13,7 @@
 
 |  Column            |  Type               |  Options          |
 | ------------------ | ------------------- | ----------------- |
-| dog_name           | string              | null: false       |
+| name               | string              | null: false       |
 
 ### Association
 - belongs_to :user

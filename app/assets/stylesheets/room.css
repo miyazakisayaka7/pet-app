@@ -1,0 +1,127 @@
+h1 {
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #f05050;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.dog-room-form {
+  width: 980px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #cfe6d2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+}
+.dog-room-form__errors {
+  margin: 30px 0;
+  padding: 20px 40px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+}
+.dog-room-form__label {
+  display: block;
+  line-height: 50px;
+  font-size: 17px;
+  text-align: right;
+  color: #d491a5;
+}
+.dog-room-form__input {
+  float: left;
+  width: 80%;
+  line-height: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border: solid 3px #f7f7ee;
+}
+.dog-room-form__action-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #d491a5;
+  border: 0;
+}
+.dog-room-form__field {
+  margin-top: 30px;
+}
+.dog-room-form__field:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.dog-room-form__field--left {
+  float: left;
+  width: 30%;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  
+}
+.dog-room-form__field--right {
+  float: right;
+  width: 70%;
+}
+
+.dog-room-user {
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  width: 500px;
+  margin: 0 auto;
+}
+.dog-room-user:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.chat-room-user__name {
+  float: left;
+}
+.dog-room-user__btn {
+  display: inline-block;
+  cursor: pointer;
+}
+.dog-room-user__btn--add {
+  color: #38aef0;
+}
+.dog-room-user__btn--remove {
+  color: #f05050;
+}
+
+.dog-room-user__name a {
+  text-decoration: none;
+  color: #38aef0;
+}
+
+select {
+  width: 500px;
+  height: 50px;
+}
+
+.top-header {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+}
