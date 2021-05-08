@@ -12,6 +12,24 @@
 
 ActiveRecord::Schema.define(version: 2021_05_06_060747) do
 
+  create_table "pets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "sex", null: false
+    t.string "type", null: false
+    t.date "birthday", null: false
+    t.string "color", null: false
+    t.text "hospital", null: false
+    t.text "medical_history", null: false    t.text "allergies", null: false
+    t.string "walk_time"
+    t.string "trimming"
+    t.text "character"
+    t.string "type_of_foods"
+    t.string "number_of_meals"
+    t.string "amount_of_food"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.bigint "user_id", null: false
@@ -33,6 +51,5 @@ ActiveRecord::Schema.define(version: 2021_05_06_060747) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "pets", "rooms"
   add_foreign_key "rooms", "users"
 end
